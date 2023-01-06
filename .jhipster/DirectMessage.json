@@ -1,0 +1,38 @@
+{
+  "applications": ["Jive"],
+  "changelogDate": "20230106170311",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "direct_message",
+  "fields": [
+    {
+      "fieldName": "userId1",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "userId2",
+      "fieldType": "Long"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "DirectMessage",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "message",
+      "otherEntityRelationshipName": "directMessage",
+      "relationshipName": "message",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "userProfile",
+      "otherEntityRelationshipName": "directMessage",
+      "ownerSide": true,
+      "relationshipName": "userProfile",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

@@ -48,6 +48,20 @@ public class CacheConfiguration {
             createCache(cm, rocks.zipcode.domain.User.class.getName());
             createCache(cm, rocks.zipcode.domain.Authority.class.getName());
             createCache(cm, rocks.zipcode.domain.User.class.getName() + ".authorities");
+            createCache(cm, rocks.zipcode.domain.UserProfile.class.getName());
+            createCache(cm, rocks.zipcode.domain.UserProfile.class.getName() + ".messages");
+            createCache(cm, rocks.zipcode.domain.UserProfile.class.getName() + ".channels");
+            createCache(cm, rocks.zipcode.domain.UserProfile.class.getName() + ".directMessages");
+            createCache(cm, rocks.zipcode.domain.Member.class.getName());
+            createCache(cm, rocks.zipcode.domain.Member.class.getName() + ".channels");
+            createCache(cm, rocks.zipcode.domain.DirectMessage.class.getName());
+            createCache(cm, rocks.zipcode.domain.DirectMessage.class.getName() + ".messages");
+            createCache(cm, rocks.zipcode.domain.DirectMessage.class.getName() + ".userProfiles");
+            createCache(cm, rocks.zipcode.domain.Channel.class.getName());
+            createCache(cm, rocks.zipcode.domain.Channel.class.getName() + ".members");
+            createCache(cm, rocks.zipcode.domain.Channel.class.getName() + ".userProfiles");
+            createCache(cm, rocks.zipcode.domain.Message.class.getName());
+            createCache(cm, rocks.zipcode.domain.Message.class.getName() + ".channels");
             // jhipster-needle-ehcache-add-entry
         };
     }

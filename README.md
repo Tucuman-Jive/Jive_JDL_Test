@@ -1,4 +1,4 @@
-# JiveTest
+# Jive
 
 This application was generated using JHipster 7.9.3, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.9.3](https://www.jhipster.tech/documentation-archive/v7.9.3).
 
@@ -99,7 +99,7 @@ docker-compose -f src/main/docker/jhipster-control-center.yml up
 
 ### Packaging as jar
 
-To build the final jar and optimize the JiveTest application for production, run:
+To build the final jar and optimize the Jive application for production, run:
 
 ```
 ./mvnw -Pprod clean verify
